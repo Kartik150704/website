@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            color: white;
+            background-color: black;
+            font-style: bold;
+        }
+        header::before{
+            content:"";
+            background: url('https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80') no-repeat center center/cover;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            height: 100%;
+            z-index: -1;
+            opacity: 40%;
+
+        }
+        .navigation
+        {
+            font-size: 1.5em;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        li
+        {
+            list-style: none;
+            padding: 20px 23px;
+        }
+        section
+        {
+            height: 10rem;
+            font-size: 2rem;
+            /* border: 2px solid white; */
+            
+            /* margin-top: -4em; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .link
+        {
+            color: white;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: black;
+            background-color: lightblue;
+        }
+        @media only screen and (max-width: 584px) {
+            .navigation
+            {
+                display: flex;
+                flex-direction: column;
+                
+                
+            }
+
+            li
+            {
+                /* font-size: 15px; */
+                display: flex;
+                justify-content: center;
+            }
+            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="items"><a class="link" href="https://codeforces.com/" target="_blank">Codeforces</a></li>
+                <li class="items"><a class="link" href="https://codeforces.com/" target="_blank">Codechef</a></li>
+                <li class="items"><a class="link" href="https://codeforces.com/" target="_blank">Leet-Code</a></li>
+                <li class="items"><a class="link" href="https://codeforces.com/" target="_blank">Hacker Rank</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <section>
+        <h3>Welcome to my website</h3>
+    </section>
+    <hr>
+</body>
+</html>
